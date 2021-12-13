@@ -10,7 +10,6 @@ const $newCommentForm = document.querySelector('#new-comment-form');
 let pizzaId;
 
 function getPizza() {
-  // get id of pizza
   const searchParams = new URLSearchParams(document.location.search.substring(1));
   const pizzaId = searchParams.get('id');
 
@@ -182,7 +181,6 @@ $backBtn.addEventListener('click', function() {
 $backBtn.addEventListener('click', function() {
   window.history.back();
 });
-
 $newCommentForm.addEventListener('submit', handleNewCommentSubmit);
 $commentSection.addEventListener('submit', handleNewReplySubmit);
 
